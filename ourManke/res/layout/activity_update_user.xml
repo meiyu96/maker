@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qimengGroup.Manke.UpdateUserActivity" 
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/Update_TextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名:" />
+
+    <EditText
+        android:id="@+id/Update_editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_TextName"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Update_editPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_Textpwd"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Update_Textpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_editName"
+        android:text="密码：" />
+
+    <TextView
+        android:id="@+id/Udate_TextAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_editPwd"
+        android:text="地址:" />
+
+    <TextView
+        android:id="@+id/Update_TextPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Udate_TextAdress"
+        android:layout_marginTop="32dp"
+        android:text="电话:" />
+
+    <EditText
+        android:id="@+id/Update_editAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Udate_TextAdress"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/Update_editPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_TextPhoneNum"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/Update_ButtonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Update_editPhoneNum"
+        android:layout_below="@+id/Update_editPhoneNum"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="54dp"
+        android:onClick="Update_ButtonSubmit"
+        android:text="确认修改" />
+
+</RelativeLayout>

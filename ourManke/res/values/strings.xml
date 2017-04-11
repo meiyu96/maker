@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我们的漫客玩</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="title_activity_me">MeActivity</string>
+    <string name="title_activity_show_photo">ShowPhotoActivity</string>
+    <string name="tab">动漫</string>
+    <string name="tab_2">小说</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="registerName">请输入用户名：</string>
+    <string name="registerpsd">请输入密码:</string>
+    <string name="registerAgainPsd">请再次输入密码:</string>
+    <string name="registerPhotoNum">请输入手机号码:</string>
+    <string name="register_submit">提交</string>
+    <string name="register_sex">性别</string>
+    <string name="register_address">请输入地址:</string>
+
+</resources>

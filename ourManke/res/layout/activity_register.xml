@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <EditText
+        android:id="@+id/register_editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/registerName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_editpsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_editName"
+        android:layout_below="@+id/register_editName"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/registerpsd"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/register_editPsdAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_editpsd"
+        android:layout_below="@+id/register_editpsd"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/registerAgainPsd"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:onClick="registerClick"
+        android:text="@string/register_submit" />
+
+    <EditText
+        android:id="@+id/register_editPhonrNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_editPsdAgain"
+        android:layout_below="@+id/register_editPsdAgain"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="@string/registerPhotoNum"
+        android:maxLength="11"
+        android:numeric="integer" />
+
+    <EditText
+        android:id="@+id/register_editSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_editPhonrNum"
+        android:layout_below="@+id/register_editPhonrNum"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/register_sex" />
+
+    <EditText
+        android:id="@+id/register_editAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_editSex"
+        android:layout_below="@+id/register_editSex"
+        android:ems="10"
+        android:hint="@string/register_address"
+        android:inputType="textPostalAddress" />
+</RelativeLayout>

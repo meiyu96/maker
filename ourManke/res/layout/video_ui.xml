@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageViewph"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="27dp"
+        android:clickable="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewph"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageViewph"
+        android:text="名称：" />
+
+    <TextView
+        android:id="@+id/jianjietext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textjianjie"
+        android:layout_alignBottom="@+id/textjianjie"
+        android:layout_toRightOf="@+id/textName"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textjianjie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textName"
+        android:layout_below="@+id/textName"
+        android:layout_marginTop="14dp"
+        android:text="简介:" />
+
+    <TextView
+        android:id="@+id/textVideoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textjianjie"
+        android:layout_alignLeft="@+id/jianjietext2"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/list_shopdatal_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <!-- 图片 -->
+
+        <ImageView
+            android:id="@+id/iv_shopdatal_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_shopdatal_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <!-- 名字 -->
+
+        <TextView
+            android:id="@+id/tv_shopdatal_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_shopdatal_item2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/list_shopdatal_item4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 价格 -->
+
+            <TextView
+                android:id="@+id/tv_shopdatal_item_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="#ffff0000"
+                android:text="¥"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 发货地 -->
+
+            <TextView
+                android:id="@+id/tv_shopdatal_item_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="深圳"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|bottom"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imbt_shopdatail_item_putin"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/buy_now"
+            android:onClick="putin"  />
+    </LinearLayout>
+    <!-- 
+    android:background="@drawable/buy_put_in"
+    android:id="@+id/list_shopdatal_item4" 
+     android:id="@+id/list_shopdatal_item4"-->
+
+</LinearLayout>

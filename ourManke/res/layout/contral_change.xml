@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+       <LinearLayout
+        android:id="@+id/linearLayout1w"
+        android:layout_width="fill_parent"
+        android:layout_height="39dp"
+        android:orientation="vertical" >
+ 
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+ 
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imagebutton_backtochang"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_drawer" />
+            </LinearLayout>
+ 
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/show_titless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="商品信息修改"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+       <TextView
+           android:id="@+id/textView_showname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/linearLayout1w"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="66dp"
+           android:text="商品名:" />
+
+       <TextView
+           android:id="@+id/textView_showmoney"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textView_showname"
+           android:layout_below="@+id/textView_showname"
+           android:layout_marginTop="60dp"
+           android:text="价格:" />
+
+       <TextView
+           android:id="@+id/textView_add"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/textView_showmoney"
+           android:layout_below="@+id/textView_showmoney"
+           android:layout_marginTop="63dp"
+           android:text="地址:" />
+
+       <EditText
+           android:id="@+id/editText_inputname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/textView_showname"
+           android:layout_alignBottom="@+id/textView_showname"
+           android:layout_alignParentRight="true"
+           android:ems="10" >
+
+           <requestFocus />
+       </EditText>
+
+       <EditText
+           android:id="@+id/editText_inputmoney"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/textView_showmoney"
+           android:layout_alignBottom="@+id/textView_showmoney"
+           android:layout_alignLeft="@+id/editText_inputname"
+           android:ems="10" />
+
+       <EditText
+           android:id="@+id/editText_inputadd"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/textView_add"
+           android:layout_alignBottom="@+id/textView_add"
+           android:layout_alignLeft="@+id/editText_inputmoney"
+           android:ems="10" />
+
+       <Button
+           android:id="@+id/button_shangchuan"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="42dp"
+           android:text="确认" />
+    
+</RelativeLayout>
